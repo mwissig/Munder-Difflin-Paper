@@ -247,7 +247,7 @@ var cartContents = (`<p>
         ${paperTypes.eight.name}: ${paperTypes.eight.quantity}<br>
         ${paperTypes.nine.name}: ${paperTypes.nine.quantity}</p>
         <hr>
-        <p>Total: ${cartBalance}</p>
+        <p>Total: $${cartBalance}</p>
         <hr><button onclick="checkOut()">Checkout</button><button class="lighterButton" onclick="checkOut()">Clear</button><button class="lighterButton" onclick="closeCart()">Close Cart</button>`);
     }
   }
