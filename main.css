@@ -1,0 +1,308 @@
+body {
+  margin: 0 auto;
+  font-family: 'Questrial', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fugaz One', cursive;
+  color: white;
+  text-shadow: 0px 1px 1px black;
+  margin: 0px;
+}
+
+p {
+  color: black;
+}
+
+.cartText {
+  color: white;
+}
+
+.cartText:hover {
+  text-shadow: 0px 0px 3px white;
+}
+
+button, .button {
+  margin: 3px;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: rgb(38, 54, 113);
+  color: rgb(233, 233, 233);
+  border: none;
+  border-radius: 3px;
+  font-family: 'Questrial', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0px 1px 1px black;
+}
+
+button:hover, .button:hover {
+  background-color: rgb(53, 74, 150);
+}
+
+.lighterButton {
+  background-color: rgb(86, 104, 163);
+}
+
+.lighterButton:hover {
+  background-color: rgb(101, 122, 194);
+}
+
+input {
+  margin: 3px;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-family: 'Questrial', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 1px 1px black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-shadow: 0px 0px 3px white;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 40px;
+  color: rgb(38, 54, 113);
+}
+
+h4 {
+  font-size: 40px;
+}
+
+#title {
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+#titleText:hover {
+  color: rgb(233, 233, 233);
+}
+
+#introHeader {
+  position: absolute;
+  top: 250px;
+  right: 150px;
+}
+
+#introPreHeader {
+  position: absolute;
+  top: 200px;
+  right: 550px;
+}
+
+#introPostHeader {
+  position: absolute;
+  top: 385px;
+  text-align: right;
+  right: 150px;
+  font-size: 30px;
+}
+
+#buyNow {
+  position: absolute;
+  top: 480px;
+  text-align: right;
+  right: 200px;
+  font-size: 30px;
+}
+
+.nav ul, li {
+  display: inline;
+  text-align: right;
+  list-style-position: inside;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.5);
+}
+
+li {
+  margin-left: 10px;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  background-color: rgb(38, 54, 113);
+  border-bottom: 2px solid #333;
+  box-shadow: 0px 0px 2px black;
+  z-index: 10;
+}
+
+#mainGrid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 800px);
+}
+
+#introContainer {
+  box-shadow: 0px 0px 20px black;
+  background-attachment: fixed;
+  overflow: hidden;
+  transition: background-image;
+  transition-duration: 4s;
+}
+
+#bookdiv {
+  background-image: url('images/book.png');
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.bg1 {
+  background-image: url("images/green_tiger_eye.jpg");
+  transition: background-image;
+  transition-duration: 5s;
+}
+
+.bg2 {
+  background-image: url("images/brown_hand_marble.jpg");
+}
+
+.paperBG1 {
+  background: linear-gradient(to right, rgba(5, 12, 33, 0.5) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(5, 12, 33, 0.5) 100%), url("images/Rives-Design-Bright-White.jpg");
+  transition: background;
+  transition-duration: 5s;
+}
+#paperColorsContainer {
+  box-shadow: 0px 0px 20px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactContainer {
+  background-image: url('images/laid_cream.jpg');
+  box-shadow: 0px 0px 20px black;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+#papersGrid {
+  display: grid;
+  grid-template: repeat(3, 150px) / repeat(3, 180px);
+  grid-gap: 10px;
+}
+
+.papersbox {
+  overflow: hidden;
+  box-shadow: 0px 1px 2px black;
+  position: relative;
+}
+
+.papersbox p {
+  position: absolute;
+  font-weight: bold;
+  color: white;
+  bottom: 5px;
+  right: 15px;
+  text-shadow: 0px 1px 1px black;
+}
+
+.larger {
+  max-width: 400px;
+}
+
+.bisectScreenGrid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 100%;
+}
+
+#leftSidePaperBox {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#rightSidePaperBox {
+  margin: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+#rightSidePaperBox img {
+    box-shadow: 0px 1px 2px black;
+}
+#cart {
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  min-width: 300px;
+  height: auto;
+  visibility: collapse;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px black;
+  z-index: 11;
+}
+#cart p {
+  margin: 5px;
+}
+
+#cart hr {
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-color: rgb(187, 187, 187);
+  margin: 0;
+}
+
+#cart button {
+  margin: 5px;
+}
+
+.cartRoll {
+  visibility: visible !important;
+}
+
+.rightAlign {
+  text-align: right;
+  margin-right: 50px;
+}
+
+#bone {
+  width: 800px;
+  height: auto;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -o-animation-duration: 4s;
+  -ms-animation-duration: 4s;
+}
+.enhanced {
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 1px 1px black;
+}
