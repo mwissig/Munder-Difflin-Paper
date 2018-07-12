@@ -30,6 +30,8 @@ function closeCart() {
   cartShowing = false;
 };
 
+
+
 //object of all the paper info
 paperTypes = {
   one: {
@@ -215,7 +217,7 @@ paperTypes = {
 }
 
 //the contents of the cart
-var cartContents = (`<p>${paperTypes.one.name}: ${paperTypes.one.quantity}<br>
+var cartContents = (`<p>
   ${paperTypes.one.name}: ${paperTypes.one.quantity}<br>
   ${paperTypes.two.name}: ${paperTypes.two.quantity}<br>
   ${paperTypes.three.name}: ${paperTypes.three.quantity}<br>
@@ -229,14 +231,36 @@ var cartContents = (`<p>${paperTypes.one.name}: ${paperTypes.one.quantity}<br>
   <p>Total: ${cartBalance}</p>
   <hr><button onclick="checkOut()">Checkout</button><button class="lighterButton" onclick="checkOut()">Clear</button><button class="lighterButton" onclick="closeCart()">Close Cart</button>`);
 
-//should update the cart to the current amounts but it doesn't work
-function generateCartContents() {
-  if (cartBalance == 0) {
-    document.getElementById("cart").innerHTML = (`<p>Your cart is empty.</p><hr><button onclick="closeCart()">Close Cart</button>`);
-  } else {
-    document.getElementById("cart").innerHTML = cartContents;
+  //should update the cart to the current amounts but it doesn't work
+  function generateCartContents() {
+    if (cartBalance == 0) {
+      document.getElementById("cart").innerHTML = (`<p>Your cart is empty.</p><hr><button onclick="closeCart()">Close Cart</button>`);
+    } else {
+      document.getElementById("cart").innerHTML = (`<p>
+        ${paperTypes.one.name}: ${paperTypes.one.quantity}<br>
+        ${paperTypes.two.name}: ${paperTypes.two.quantity}<br>
+        ${paperTypes.three.name}: ${paperTypes.three.quantity}<br>
+        ${paperTypes.four.name}: ${paperTypes.four.quantity}<br>
+        ${paperTypes.five.name}: ${paperTypes.five.quantity}<br>
+        ${paperTypes.six.name}: ${paperTypes.six.quantity}<br>
+        ${paperTypes.seven.name}: ${paperTypes.seven.quantity}<br>
+        ${paperTypes.eight.name}: ${paperTypes.eight.quantity}<br>
+        ${paperTypes.nine.name}: ${paperTypes.nine.quantity}</p>
+        <hr>
+        <p>Total: ${cartBalance}</p>
+        <hr><button onclick="checkOut()">Checkout</button><button class="lighterButton" onclick="checkOut()">Clear</button><button class="lighterButton" onclick="closeCart()">Close Cart</button>`);
+    }
   }
-}
+
+  function buy1() {
+    paperTypes.one.quantity++;
+    cartBalance += paperTypes.one.price;
+    console.log(paperTypes.one.quantity);
+    console.log(cartContents);
+    generateCartContents();
+    console.log(cartContents);
+  }
+
 //returns the product info section to the default text
 function closeProduct() {
   document.getElementById("rightSidePaperBox").innerHTML = rightBoxText;
