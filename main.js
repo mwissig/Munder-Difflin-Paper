@@ -247,14 +247,14 @@ var currentScrollHeight = 0;
 var animationDone = false;
 
 function section1(scroll_pos) {
-  if (currentScrollHeight > 150) {
+  if (currentScrollHeight > 50) {
     introContainer.classList.add('bg2');
     section2(scroll_pos);
   }
 }
 
 function section2(scroll_pos) {
-  if (currentScrollHeight > 800) {
+  if (currentScrollHeight > 700) {
     rightSidePaperBox.classList.add('animated');
     rightSidePaperBox.classList.add('slideInRight');
     rightSidePaperBox.classList.remove('hide');
@@ -263,7 +263,7 @@ function section2(scroll_pos) {
 }
 
 function section3(scroll_pos) {
-  if (currentScrollHeight > 1200) {
+  if (currentScrollHeight > 1100) {
     bookdiv.classList.add('animated');
     bookdiv.classList.add('slideInUp');
     bookdiv.classList.remove('hide');

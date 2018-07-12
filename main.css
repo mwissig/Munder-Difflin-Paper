@@ -180,6 +180,7 @@ header {
 
 .bg1 {
   background-image: url("images/green_tiger_eye.jpg");
+  background-size: cover;
   transition: background-image;
   transition-duration: 5s;
 }
@@ -190,6 +191,7 @@ header {
 
 .paperBG1 {
   background: linear-gradient(to right, rgba(5, 12, 33, 0.5) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(5, 12, 33, 0.5) 100%), url("images/Rives-Design-Bright-White.jpg");
+    background-size: cover;
   transition: background;
   transition-duration: 5s;
 }
@@ -202,6 +204,7 @@ header {
 
 #contactContainer {
   background-image: url('images/laid_cream.jpg');
+    background-size: cover;
   box-shadow: 0px 0px 20px black;
   background-attachment: fixed;
   overflow: hidden;
@@ -218,7 +221,14 @@ header {
   box-shadow: 0px 1px 2px black;
   position: relative;
 }
-
+.papersbox:hover {
+  box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+  border: 2px solid white;
+  border-radius: 2px;
+    box-shadow: 0px 1px 3px black;
+}
 .papersbox p {
   position: absolute;
   font-weight: bold;
@@ -254,6 +264,8 @@ header {
 }
 #rightSidePaperBox img {
     box-shadow: 0px 1px 2px black;
+    border: 2px solid white;
+    border-radius: 2px;
 }
 #cart {
   background-color: white;
