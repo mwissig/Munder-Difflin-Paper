@@ -1,5 +1,6 @@
 # Munder Difflin Paper
 A web site for a fictional paper company, made to demonstrate use of wireframing, HTML, CSS, and Javascript.
+Uses scroll animations.
 
 Wireframe: [https://wireframe.cc/aAFWQR](https://wireframe.cc/aAFWQR)
 
