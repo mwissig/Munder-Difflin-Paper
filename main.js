@@ -41,17 +41,20 @@ paperTypes = {
     price: 20,
     image: "images/green_tiger_eye.jpg",
     buy: function() {
-      this.quantity++;
-      cartBalance += this.price;
+      paperTypes.one.quantity++;
+      cartBalance += paperTypes.one.price;
       generateCartContents();
     },
     displayInfo: function() {
-      document.getElementById("rightSidePaperBox").innerHTML = (`<p>${this.name}</p>
-        <p>${this.size}<br>
-        ${details}</p><p>
-        $${this.price}.00</p>
-        <p><button onclick="${this.buy()}">Add to cart</button><button class="lighterButton" onclick="closeProduct()">Close</button></p>
-        <p><img src="${this.image}" class="larger"></p>`);
+      var box = document.getElementById("rightSidePaperBox");
+  box.innerHTML = (`<p>${this.name}</p>
+    <p>${this.size}<br>
+    ${details}</p><p>
+    $${this.price}.00</p>
+    <p><button class="buy">Add to cart</button><button class="lighterButton" onclick="closeProduct()">Close</button></p>
+    <p><img src="${this.image}" class="larger"></p>`);
+  var buy = box.querySelector(".buy");
+  buy.onclick = this.buy;
     }
   },
   two: {
