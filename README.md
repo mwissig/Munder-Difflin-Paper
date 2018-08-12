@@ -2,6 +2,8 @@
 A web site for a fictional paper company, made to demonstrate use of wireframing, HTML, CSS, and Javascript.
 Uses scroll animations.
 
+![Screenshot gif](http://i66.tinypic.com/ipyruo.jpg)
+
 Wireframe: [https://wireframe.cc/aAFWQR](https://wireframe.cc/aAFWQR)
 
 While everyone knows Dunder Mifflin paper for its bulk sales of standard copy paper, its bizarro-world doppelganger, Munder Difflin, specializes in selling expensive decorative papers by the sheet.
